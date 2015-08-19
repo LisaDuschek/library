@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body style="font-family: 'Play', serif;font-size: 35px;">
+
+
+  <h1 style="text-align: center; margin-bottom: 50px;">Welcome to the library! <i class="fa fa-tasks"></i></h1>
+
+  <div class="container">
+    <% if @books.any?() %>
+    <h3>Here are your books:</h3>
+
+    <ul>
+      <% @books.each() do |book| %>
+      <li><a href="/books_form/<%= book.id()%>"><%= book.name() %></a> </li>
+      <% end %>
+    </ul>
+
+    <% end %>
+  </div>
+    <a href="/books_form"><button class="btn btn-success">Add a book!</a>
+
+    <!-- Search book -->
+
+    <a href="/patrons"><button class="btn btn-success">PATRONS</a>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+<h1>Welcome to patrons' page!</h1>
+
+<form action="/patrons" method="post">
+  <input id="patron_id" name="patron_id" type="hidden" value="<%= @patron_id %>">
+  <label for="name">Enter your name!</label>
+  <input id="name" name="name" type="text">
+
+  <button type="submit" class="btn-success">Enter!</button>
+</form>
+
+
+<h2>History of books you rented</h2>
+
+<!-- <% if @patrons.any?() %>
+
+<ul>
+  <% @patrons.each() do |patron| %>
+  <li><%= patron.name() %> </a>]</li>
+  <% end %>
+</ul>
+
+<% else %>
+<p>There are no books on this list!</p>
+<% end %> -->
+
+
+<h2>When is the book due?</h2>
+
+
+
+
+<h2>Check out a book!</h2>
+
+
+<a href="/"><button class="btn btn-success">Back to Homepage!</a>

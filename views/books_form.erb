@@ -1,0 +1,11 @@
+<h2>Add a book!</h2>
+
+<form action="/" method="post">
+  <input id="id" name="id" type="hidden" value="<%= @books %>">
+  <label for="name">Enter book title</label>
+  <input id="name" name="name" type="text">
+
+  <button type="submit" class="btn-success">Add book!</button>
+</form>
+
+<a href="/"><button class="btn btn-success">Back to Homepage!</a>
